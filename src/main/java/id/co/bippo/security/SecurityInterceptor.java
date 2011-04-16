@@ -13,7 +13,6 @@ import org.slf4j.LoggerFactory;
 @Secured @Interceptor
 public class SecurityInterceptor {
 
-	String entityName;
 	@Inject
 	Subject subject;
 	@Inject

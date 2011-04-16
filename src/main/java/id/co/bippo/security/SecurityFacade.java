@@ -27,12 +27,12 @@ public class SecurityFacade {
 		SecurityUtils.setSecurityManager(securityManager);
 	}
 	
-	@Produces @ApplicationScoped @Named("securityManager")
+	@Produces @Named("securityManager")
 	public SecurityManager getSecurityManager() {
 		return securityManager;
 	}
 	
-	@Produces @ApplicationScoped
+	@Produces
 	public Subject getSubject() {
 		return SecurityUtils.getSubject();
 	}
